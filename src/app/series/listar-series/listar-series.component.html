@@ -1,0 +1,36 @@
+<div class="title-container">
+    <img class="logo" src="../assets/FOX.png" alt="FOX Logo">
+    <h1 class="title">Listado de Series de Televisión</h1>
+</div>
+
+<div class="container">
+    <table id="seriesTable" class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Canal</th>
+                <th>Temporadas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let serie of series" class="data-row">
+                <td>{{ serie.id }}</td>
+                <td class="name">{{ serie.name }}</td>
+                <td>{{ serie.channel }}</td>
+                <td>{{ serie.seasons }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <table id="seriesTable" class="table">
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong>Promedio de temporadas:</strong></td>
+                <td>{{ calcularPromedioTemporadas() | number:'1.2-2' }}</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
