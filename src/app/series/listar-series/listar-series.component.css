@@ -1,0 +1,35 @@
+.title-container {
+    background-color: #75a1cf;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#seriesTable {
+    width: calc(100% - 20px);
+    margin-left: 80px;
+    text-align: center;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 500px;
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%;
+}
+
+.name {
+    color: blue;
+}
